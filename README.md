@@ -149,10 +149,10 @@ This design is upgrade-safe and avoids storage layout collisions.
 
 ## 🔐 Upgradeability
 
-Upgrades are authorized by the contract owner. Use `upgradeTo()` from the proxy address:
+Upgrades are authorized by the contract owner. Use `upgradeToAndCall()` from the proxy address:
 
 ```solidity
-proxy.upgradeTo(newImplementation);
+proxy.upgradeToAndCall(newImplementation, data);
 ```
 
 The `MyToken` contract enforces this with:
