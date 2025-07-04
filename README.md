@@ -160,9 +160,3 @@ The `MyToken` contract enforces this with:
 ```solidity
 function _authorizeUpgrade(address newImplementation) internal override onlyOwner {}
 ```
-
----
-
-## 📄 License
-
-MIT
